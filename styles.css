@@ -1,3 +1,12 @@
-p {
-    color: red;
+div {
+    color: #272842;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    width: 850px;
+    line-height: 33px;
 }
+
+.color {
+    color: #273c80
+}
+
