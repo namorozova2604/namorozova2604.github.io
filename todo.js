@@ -19,7 +19,7 @@ function onPageLoaded() {
 
         ul.appendChild(li).append(textSpan, deleteBtn);
         input.value = "";
-        listenDeleteTodo(deleteBtn);
+       
     }
 
     input.addEventListener("keypress", (keyPressed) => {
