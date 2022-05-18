@@ -69,6 +69,33 @@ nav a {
 .container {
   width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*   features-section   */
+#features {
+  margin: 3.5rem 0;
+}
+
+.feature-grid {
+  display: flex;
+  height: 150px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #117864;
+  width: 20%;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
