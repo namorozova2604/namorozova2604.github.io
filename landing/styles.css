@@ -79,7 +79,8 @@ nav a {
 
 .feature-grid {
   display: flex;
-  height: 150px;
+  height: 175px;
+  justify-content: center;
 }
 
 .icon {
@@ -96,6 +97,32 @@ nav a {
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 375px) {
+  .feature-grid {
+    height: auto;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .desc {
+    text-align: center;
+    align-items: center;
+  }
+}
+/*   pricing-section   */
+#pricing {
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  #pricing {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
