@@ -1,0 +1,167 @@
+$light-gray: #F8F9F9;
+$medium-gray: #CACFD2;
+$dark-gray: #424949;
+$accent: #82E0AA;
+$light-accent: #EAFAF1;
+
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  background-color: $light-gray;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: $dark-gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   Base tags   */
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $dark-gray;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: calc(100% - 4.5rem);
+    object-fit: cover;
+}
+
+/*   header   */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: $medium-gray;
+    height: 30vh;
+    padding: 3rem;
+
+    h1 {
+        font-size: 3rem;
+        color: $dark-gray;
+        padding-top: 4rem;
+    }
+
+    p {
+        color: $dark-gray;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/*   nav   */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $light-accent;
+    border-radius: 2px;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    a {
+        font-size: 1.4rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    nav {
+        width: 100%;
+
+        ul {
+            justify-content: center;
+        }
+    }
+}
+
+/*   projects   */
+
+.container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 5rem auto;
+    width: 100%;
+
+    p {
+        background-color: $dark-gray;
+        color: $light-accent;
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    p:hover {
+        color: $accent;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+/*   footer   */
+
+footer {
+    background-color: $medium-gray;
+    color: $dark-gray;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    p {
+        font-size: 1.5rem;
+        padding-top: 1.8rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;  
+    }
+
+    li {
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    footer {
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            padding: 0.2rem 0;
+        }
+    }
+}
+
+
+
