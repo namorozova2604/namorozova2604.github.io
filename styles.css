@@ -27,7 +27,7 @@ li {
 img {
   display: block;
   width: 100%;
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 5rem);
   object-fit: cover;
 }
 
@@ -93,7 +93,7 @@ nav a {
   background-color: #424949;
   color: #EAFAF1;
   font-size: 1.5rem;
-  padding: 1.5rem 0;
+  padding: 1.4rem 0;
   text-align: center;
 }
 .container p:hover {
@@ -123,6 +123,9 @@ footer ul {
 }
 footer li {
   padding: 1.3rem;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

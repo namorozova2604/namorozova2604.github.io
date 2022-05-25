@@ -35,7 +35,7 @@ li {
 img {
     display: block;
     width: 100%;
-    height: calc(100% - 4.5rem);
+    height: calc(100% - 5rem);
     object-fit: cover;
 }
 
@@ -111,7 +111,7 @@ nav {
         background-color: $dark-gray;
         color: $light-accent;
         font-size: 1.5rem;
-        padding: 1.5rem 0;
+        padding: 1.4rem 0;
         text-align: center;
     }
 
@@ -147,6 +147,10 @@ footer {
 
     li {
         padding: 1.3rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
 
