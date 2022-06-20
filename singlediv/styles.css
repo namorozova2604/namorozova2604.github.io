@@ -1,0 +1,62 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dudoso {
+  position: absolute;
+  bottom: 100px;
+  width: 100px;
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  height: 100px;
+  background-color: #8D241C;
+  border-radius: 40px;
+  box-shadow: 25px -80px 1px -45px #441511, -25px -80px 1px -45px #441511, 0px -90px 0px -20px #8D241C, 0px -82px 0px -24px #441511, 0px -90px 0px 30px #8D241C, 0px -240px 0px 35px white, 0px -200px 0px 30px #441511;
+}
+
+div::before {
+  display: block;
+  content: ".";
+  color: #8D241C;
+  background-color: #8D241C;
+  position: relative;
+  right: 30px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 119px 0px 0px 0px #8D241C;
+}
+
+div::after {
+  display: block;
+  content: ".";
+  animation-duration: 3s;
+  animation-name: shadow;
+  animation-iteration-count: infinite;
+  background-color: #AEB6BF;
+  color: #AEB6BF;
+  position: relative;
+  top: 80px;
+  right: 25px;
+  border-radius: 50%;
+  width: 150px;
+}
+
+@keyframes slide {
+  50% {
+    bottom: 300px;
+  }
+}
+@keyframes shadow {
+  50% {
+    transform: scale(1.8) translateY(6rem);
+    opacity: 0.2;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
