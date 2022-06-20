@@ -74,19 +74,19 @@ div::after {
 a {
   text-decoration: none;
   display: block;
-  width: 300px;
-  height: 100px;
   text-align: center;
-  background-color: $shadow;
+  padding: 1.2rem;
+  background-color: rgb(207, 207, 207);
   border-radius: 10px;
-  font-size: 1rem;
-  color: black;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(44, 44, 44);
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 }
 
 a:hover {
   font-size: 1.2rem;
-  box-shadow: 10px 5px 5px rgb(49, 49, 49);
+  box-shadow: 10px 5px 5px $shadow;
 }
